@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='relative flex items-center justify-center text-white h-screen overflow-hidden flex-col'>
             <ParticlesHero />
             <div className='relative z-10 flex flex-col items-center'>
-                <Image src={"/images/foto_hero.jpg"} alt='heroImage' width={150} height={150} className='rounded-full border-8 border-[#112800aa]' data-aos="fade-up" />
+                <Image src="/images/foto_hero.jpg" alt='heroImage' width={150} height={150} className='rounded-full border-8 border-[#112800aa]' data-aos="fade-up" />
                 <h1 data-aos="fade-up" data-aos-delay="200" className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide'>Building modern web<br />
                     and mobile <span className='text-[#C4E860]'> applications.</span>
                 </h1>
