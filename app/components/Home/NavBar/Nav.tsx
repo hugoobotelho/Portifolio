@@ -6,15 +6,38 @@ import { BiDownload } from 'react-icons/bi'
 import { FaCode } from 'react-icons/fa'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
-type Props = { 
-    openNav: ()=>void
+type Props = {
+    openNav: () => void
 }
 
-const Nav = ({openNav}:Props) => {
+const Nav = ({ openNav }: Props) => {
+
+    const [activeSection, setActiveSection] = useState('home')
+
+    useEffect(() => {
+        const sections = document.querySelectorAll('section')
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id)
+                    }
+                })
+            },
+            {
+                threshold: 0.25, // 25% da section visível
+            }
+        )
+
+        sections.forEach(section => observer.observe(section))
+
+        return () => observer.disconnect()
+    }, [])
 
     const [navBg, setNavBg] = useState(false)
 
-    useEffect(()=>{
+    useEffect(() => {
         const handler = () => {
             if (window.scrollY >= 90) setNavBg(true)
             else setNavBg(false)
@@ -26,7 +49,7 @@ const Nav = ({openNav}:Props) => {
     }, [])
 
     return (
-        <div className={`transition-all ${navBg ? 'bg-[#0f142ed9] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[10000] fixed w-full`}>
+        <div className={`transition-all ${navBg ? 'bg-[#171D1Dd9] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[10000] fixed w-full`}>
             <div className='flex items-center h-full justify-between w-[90%] mx-auto'>
                 {/* Logo */}
                 <div className='flex items-center space-x-2'>
@@ -38,7 +61,10 @@ const Nav = ({openNav}:Props) => {
                 {/* NavLinks */}
                 <div className='hidden lg:flex items-center space-x-10'>
                     {NavLinks.map((link) => {
-                        return (<Link key={link.id} href={link.url} className='text-base hover:text-cyan-300 text-white font-medium transition-all duration-200'>
+                        return (<Link key={link.id} href={link.url} className={`text-base  ${activeSection === link.section
+                                ? 'text-[#C4E860]'
+                                : 'text-white hover:text-[#C4E860]'
+                            } font-medium transition-all duration-200`}>
                             <p>{link.label}</p>
                         </Link>)
                     })}
@@ -46,13 +72,13 @@ const Nav = ({openNav}:Props) => {
                 {/* Buttons */}
                 <div className='flex items-center space-x-4'>
                     {/* CV Button */}
-                    <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'>
-                        <BiDownload className='w-5 h-5 text-white'/>
-                        <span>Download CV</span>
+                    <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#C4E860] hover:bg-[#A0BC53] transition-all duration-300 text-white flex items-center space-x-2'>
+                        <BiDownload className='w-5 h-5 text-[#171D1D]' />
+                        <span className=' text-[#171D1D]'>Download CV</span>
                     </button>
                     {/* Burger Menu */}
                     <button onClick={openNav}>
-                        <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+                        <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden' />
                     </button>
                 </div>
             </div>

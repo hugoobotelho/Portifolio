@@ -11,8 +11,8 @@ type Props = {
 const ResumeCard = ({ role, Icon, date, description }: Props) => {
     return (
         <div className='mb-6'>
-            <div className='flex items-start space-x-6 bg-blue-950/20 transition all duration-300 p-4 sm:p-8 rounded-md'>
-                <div className='w-10 h-10 sm:w-14 sm:h-14 bg-blue-950 rounded-full flex items-center justify-center flex-col'>
+            <div className='flex items-start space-x-6 bg-[#171D1D] transition all duration-300 p-4 sm:p-8 rounded-md'>
+                <div className='w-10 h-10 sm:w-14 sm:h-14 bg-[#2B2B2B] rounded-full flex items-center justify-center flex-col'>
                     <Icon className='sm:w-8 sm:h-8 w-6 h-6 text-white'/>
                 </div>
                 <div className='flex-1'>

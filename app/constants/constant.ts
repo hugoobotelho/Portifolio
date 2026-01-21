@@ -1,39 +1,10 @@
 import { url } from "inspector";
 
 export const NavLinks = [
-    {
-        id: 1,
-        url: '#',
-        label: 'Home'
-    },
-    {
-        id: 2,
-        url: '#',
-        label: 'Services'
-    },
-    {
-        id: 3,
-        url: '#',
-        label: 'Resume'
-    },
-    {
-        id: 4,
-        url: '#',
-        label: 'Works'
-    },
-    {
-        id: 5,
-        url: '#',
-        label: 'Skills'
-    },
-    {
-        id: 6,
-        url: '#',
-        label: 'Testimonials'
-    },
-    {
-        id: 7,
-        url: '#',
-        label: 'Contact'
-    },
+  { id: 1, url: '#home', label: 'Home', section: 'home' },
+  { id: 2, url: '#services', label: 'Services', section: 'services' },
+  { id: 3, url: '#resume', label: 'Resume', section: 'resume' },
+  { id: 4, url: '#works', label: 'Works', section: 'works' },
+  { id: 5, url: '#skills', label: 'Skills', section: 'skills' },
+  { id: 6, url: '#contact', label: 'Contact', section: 'contact' }
 ]
