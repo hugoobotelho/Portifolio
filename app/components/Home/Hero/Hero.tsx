@@ -14,7 +14,7 @@ const Hero = () => {
             <div className='relative z-10 flex flex-col items-center'>
                 <div data-aos="fade-up" className="relative w-[150px] h-[150px] rounded-full border-8 border-[#112800aa] overflow-hidden">
                     <Image
-                        src="/images/foto_hero.jpg"
+                        src="/images/foto_hero.png"
                         alt="Hero Image"
                         fill
                         className="object-cover"
