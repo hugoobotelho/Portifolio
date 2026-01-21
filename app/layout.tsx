@@ -32,7 +32,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <ScrollToTop />
-        <Toaster position="bottom-right" reverseOrder={false}/>
+        <Toaster position="bottom-left" reverseOrder={false}/>
       </body>
     </html>
   );
