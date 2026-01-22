@@ -1,0 +1,80 @@
+{
+  "NavBar": {
+    "home": "Início",
+    "services": "Serviços",
+    "resume": "Currículo",
+    "works": "Trabalhos",
+    "skills": "Habilidades",
+    "contact": "Contato",
+    "download": "Baixar CV"
+  },
+  "HeroPage": {
+    "title": "Construindo modernas",
+    "titleBreak": "aplicações",
+    "titleSpan": " web e mobile.",
+    "subtitle": "Olá! Sou Hugo - Um apaixonado ",
+    "subtitleOp1": "Desenvolvedor Web",
+    "subtitleOp2": "Desenvolvedor Mobile",
+    "subtitleOp3": "Desenvolvedor de Jogos",
+    "button": "Veja meu trablho"
+  },
+  "ServicesPage": {
+    "title": "O que",
+    "titleSpan": "eu faço?",
+    "subtitle": "As áreas de desenvolvimento nas quais atuo e as tecnologias que utilizo para transformar ideias em soluções práticas.",
+    "titleCard1": "Desenvolvimento Frontend",
+    "descriptionCard1": "Construção de interfaces web responsivas e acessíveis utilizando React, Next.js, TypeScript, Tailwind CSS e integrações com APIs.",
+    "titleCard2": "Desenvolvimento Mobile",
+    "descriptionCard2": "Desenvolvimento de aplicações mobile utilizando React Native e desenvolvimento Android com Kotlin.",
+    "titleCard3": "Back-end e Sistemas",
+    "descriptionCard3": "Experiência com Java, Spring Boot e bancos de dados, com foco em aprendizado, integração e lógica de sistemas.",
+    "titleCard4": "Desenvolvimento de Jogos",
+    "descriptionCard4": "Desenvolvimento de jogos utilizando Unity e C#, com foco em mecânicas de jogo e interatividade."
+  },
+  "ResumePage": {
+    "experienceTitle": "Minha",
+    "experienceTitleSpan": "Experiência",
+    "educationTitle": "Minha",
+    "educationTitleSpan": "Formação",
+    "resumeCardTitle1": "Projeto de Iniciação Científica",
+    "resumeCardDescription1": "Atuação no desenvolvimento e manutenção de uma aplicação educacional Android utilizando Kotlin, com foco no apoio à alfabetização infantil. Implementação de novas funcionalidades, correção de bugs e colaboração em um ambiente de desenvolvimento voltado à pesquisa.",
+    "resumeCardTitle2": "Projetos Acadêmicos e Pessoais",
+    "resumeCardDescription2": "Desenvolvimento de aplicações web e mobile utilizando React, Next.js, React Native e TypeScript. Foco em design responsivo, integração com APIs, acessibilidade e experiência do usuário.",
+    "resumeCardTitle3": "Projetos de Desenvolvimento de Jogos",
+    "resumeCardDescription3": "Desenvolvimento de jogos utilizando Unity e C#, explorando mecânicas de jogo, física, animações, interface do usuário e feedback interativo por meio de projetos acadêmicos e pessoais.",
+    "resumeCardTitle4": "Bacharelado em Ciência da Computação",
+    "resumeCardDescription4": "Graduando na Universidade Estadual do Sudoeste da Bahia (UESB), com sólida base em lógica de programação, estruturas de dados e programação orientada a objetos. Experiência com projetos acadêmicos em desenvolvimento web, mobile, backend e jogos.",
+    "progress": "2022.2 – 2026.2 (Em andamento)"
+  },
+  "WorksPage": {
+    "title": "Uma pequena seleção de",
+    "titleSpan": "projetos recentes",
+    "titelCard1": "Filmes mais bem avaliados",
+    "descriptionCard1": "Aplicação web para descoberta de filmes que exibe os filmes mais bem avaliados e em alta, permitindo que os usuários naveguem por gênero e ano de lançamento. Desenvolvida com React e TypeScript, o projeto consome dados da API do TMDB e foca em design responsivo, navegação clara e uma experiência de usuário fluida.",
+    "titelCard2": "Painel de gerenciamento de CT",
+    "descriptionCard2": "Sistema de gerenciamento baseado na web desenvolvido para auxiliar centros de treinamento esportivo no cadastro de alunos, agendamento de quadras e organização de aulas. Desenvolvido com React e Vite, o projeto foca em fluxos administrativos, organização de dados e usabilidade.",
+    "titelCard3": "Legere Ensino",
+    "descriptionCard3": "Aplicação educacional Android desenvolvida durante um projeto de iniciação científica com duração de um ano, com o objetivo de apoiar a alfabetização infantil por meio de jogos e atividades interativas que atuam como importantes preditores do sucesso na aprendizagem durante a educação inicial. Desenvolvida com Kotlin utilizando o Android Studio.",
+    "titelCard4": "Estacionados",
+    "descriptionCard4": "Jogo educacional desenvolvido durante um curso de desenvolvimento de jogos utilizando Unity 3D e C#. A jogabilidade combina diversão e aprendizado ao desafiar os jogadores a estacionar um carro no local indicado dentro de um tempo limitado e responder a questionários sobre regras de trânsito baseados no Código de Trânsito Brasileiro (CTB) para ganhar estrelas. O projeto utiliza assets 3D da Unity Asset Store e efeitos sonoros obtidos no Pixabay."
+  },
+  "SkillPage": {
+    "title": "Minhas",
+    "titleSpan": "Habilidades"
+  },
+  "ContactPage": {
+    "title": "Agende uma conversa comigo para ver como posso ajudar",
+    "subtitle": "Entre em contato comigo hoje e vamos conversar sobre como posso ajudar você a alcançar seus objetivos.",
+    "namePlaceholder": "Nome",
+    "emailPlaceholder": "Endereço de e-mail",
+    "mobilePlaceholder": "Telefone",
+    "messagePlaceholder": "Sua mensagem",
+    "sendButton": "Enviar mensagem",
+    "alertWarning": "Por favor, preencha todos os campos obrigatórios!",
+    "alertSuccess": "Mensagem enviada com sucesso!",
+    "alertError": "Algo deu errado. Por favor, tente novamente mais tarde ou entre em contato comigo por e-mail."
+  },
+  "Footer": {
+    "title":"Hugo - Site de Portfólio Pessoal"
+  }
+}

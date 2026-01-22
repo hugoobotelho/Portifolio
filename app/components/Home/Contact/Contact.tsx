@@ -5,8 +5,11 @@ import React from 'react'
 import { BiEnvelope, BiMap, BiPhone } from 'react-icons/bi'
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import toast from "react-hot-toast"
+import { useTranslations } from "next-intl"
 
 const Contact = () => {
+
+    const t = useTranslations("ContactPage")
 
     const [form, setForm] = useState({
         name: "",
@@ -24,7 +27,7 @@ const Contact = () => {
             //     description: "Make sure to enter your name, email, and message before sending.",
             //     color: "warning",
             // })
-            toast.error('Please fill all required fields!')
+            toast.error(t("alertWarning"))
 
             return
         }
@@ -42,7 +45,7 @@ const Contact = () => {
             //     description: "Thank you for reaching out! I’ll get back to you as soon as possible.",
             //     color: "success",
             // })
-            toast.success('Message sent successfully!')
+            toast.success(t("alertSuccess"))
 
             setForm({ name: "", email: "", phone: "", message: "" })
         } else {
@@ -51,7 +54,7 @@ const Contact = () => {
             //     description: "Something went wrong. Please try again later or contact me via email.",
             //     color: "danger",
             // })
-            toast.error('Something went wrong. Please try again later or contact me via email.')
+            toast.error(t("alertError"))
         }
     }
 
@@ -61,9 +64,9 @@ const Contact = () => {
             <div className='w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
                 {/* Text content */}
                 <div>
-                    <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200'>Schedule a call with me to see if I can help</h1>
+                    <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200'>{t("title")}</h1>
                     <p className='text-gray-400 mt-6 text-base sm:text-lg'>
-                        Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
+                        {t("subtitle")}
                     </p>
                     <div className='mt-7'>
                         {/* Info */}
@@ -102,18 +105,18 @@ const Contact = () => {
                 {/* form */}
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" className='md:p-10 p-5 bg-[#171D1D] rounded-lg'>
                     <form onSubmit={handleSubmit} >
-                        <input type="text" placeholder='Name' className='px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 '
+                        <input type="text" placeholder={t("namePlaceholder")} className='px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 '
                             onChange={e => setForm({ ...form, name: e.target.value })} />
-                        <input type="email" placeholder='Email Address' className='mt-6 px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 '
+                        <input type="email" placeholder={t("emailPlaceholder")} className='mt-6 px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 '
                             onChange={e => setForm({ ...form, email: e.target.value })}
                         />
-                        <input type="text" placeholder='Mobile Number' className='mt-6 px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 '
+                        <input type="text" placeholder={t("mobilePlaceholder")} className='mt-6 px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 '
                             onChange={e => setForm({ ...form, phone: e.target.value })}
                         />
-                        <textarea placeholder='Your Message' className='mt-6 px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 h-[10rem]'
+                        <textarea placeholder={t("messagePlaceholder")} className='mt-6 px-4 py-3.5 bg-[#2B2B2B] text-white outline-none rounded-md w-full placeholder:text-white/70 h-[10rem]'
                             onChange={e => setForm({ ...form, message: e.target.value })}
                         ></textarea>
-                        <button type="submit" className='mt-8 px-12 py-4 bg-[#C4E860] hover:bg-[#A0BC53] transition-all duarition-300 cursor-pointer text-[#171D1D] rounded-full'>Send Message</button>
+                        <button type="submit" className='mt-8 px-12 py-4 bg-[#C4E860] hover:bg-[#A0BC53] transition-all duarition-300 cursor-pointer text-[#171D1D] rounded-full'>{t("sendButton")}</button>
 
                     </form>
                 </div>

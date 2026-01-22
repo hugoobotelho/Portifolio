@@ -1,4 +1,5 @@
 'use client'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 import { FaCode, FaJava } from 'react-icons/fa'
 import { SiAndroidstudio, SiFigma, SiGit, SiGithub, SiJavascript, SiKotlin, SiMysql, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiTailwindcss, SiTypescript, SiUnity } from 'react-icons/si'
@@ -34,10 +35,12 @@ const skills = [
 ]
 
 const Skills = () => {
+
+    const t = useTranslations("SkillPage")
     return (
         <div className='text-white py-16'>
             <h1 className='text-white font-bold text-center text-2xl md:text-4xl xl:text-5xl'>
-                My <span className='text-[#C4E860]'>Skills</span>
+                {t("title")} <span className='text-[#C4E860]'>{t("titleSpan")}</span>
             </h1>
             <div className='flex flex-wrap gap-6 justify-center mt-16'>
                 {skills.map((skil, i) => {

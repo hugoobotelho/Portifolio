@@ -33,23 +33,23 @@ const Home = () => {
         <Hero />
       </section>
 
-      <section id="services">
+      <section id="services" className="scroll-mt-[10vh]">
         <Services />
       </section>
 
-      <section id="resume">
+      <section id="resume" className="scroll-mt-[10vh]">
         <Resume />
       </section>
 
-      <section id="works">
+      <section id="works" className="scroll-mt-[10vh]">
         <Projects />
       </section>
 
-      <section id="skills">
+      <section id="skills" className="scroll-mt-[10vh]">
         <Skills />
       </section>
 
-      <section id="contact">
+      <section id="contact" className="scroll-mt-[10vh]">
         <Contact />
       </section>
 

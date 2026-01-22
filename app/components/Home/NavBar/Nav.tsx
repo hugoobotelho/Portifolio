@@ -1,16 +1,21 @@
 "use client"
-import { NavLinks } from '@/app/constants/constant'
+import { NavLinks } from '@/app/[locale]/constants/constant'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { BiDownload } from 'react-icons/bi'
 import { FaCode } from 'react-icons/fa'
 import { HiBars3BottomRight } from 'react-icons/hi2'
+import LanguageSelect from './LanguageSelect'
 
 type Props = {
     openNav: () => void
 }
 
 const Nav = ({ openNav }: Props) => {
+
+    const t = useTranslations('NavBar');
+
 
     const [activeSection, setActiveSection] = useState('home')
 
@@ -65,16 +70,19 @@ const Nav = ({ openNav }: Props) => {
                                 ? 'text-[#C4E860]'
                                 : 'text-white hover:text-[#C4E860]'
                             } font-medium transition-all duration-200`}>
-                            <p>{link.label}</p>
+                            <p>{t(link.labelKey)}</p>
                         </Link>)
                     })}
                 </div>
                 {/* Buttons */}
                 <div className='flex items-center space-x-4'>
+                    {/* Select language button */}
+                    <LanguageSelect/>
+
                     {/* CV Button */}
                     <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#C4E860] hover:bg-[#A0BC53] transition-all duration-300 text-white flex items-center space-x-2'>
                         <BiDownload className='w-5 h-5 text-[#171D1D]' />
-                        <span className=' text-[#171D1D]'>Download CV</span>
+                        <span className=' text-[#171D1D]'>{t('download')}</span>
                     </button>
                     {/* Burger Menu */}
                     <button onClick={openNav}>

@@ -1,0 +1,91 @@
+{
+  "NavBar": {
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "works": "Works",
+    "skills": "Skills",
+    "contact": "Contact",
+    "download": "Download CV"
+  },
+  "HeroPage": {
+    "title": "Building modern web",
+    "titleBreak": "and mobile",
+    "titleSpan": "applications.",
+    "subtitle": "Hi! I'm Hugo - A passionate ",
+    "subtitleOp1": "Web Developer",
+    "subtitleOp2": "Mobile Developer",
+    "subtitleOp3": "Game Developer",
+    "button": "See my work"
+  },
+  "ServicesPage": {
+    "title": "What",
+    "titleSpan": "I do?",
+    "subtitle": "The areas of development I focus on and the technologies I use to turn ideas into practical solutions.",
+    "titleCard1": "Frontend Development",
+    "descriptionCard1": "Building responsive and accessible web interfaces using React, Next.js, TypeScript, Tailwind CSS and API integrations.",
+    
+    "titleCard2": "Mobile Development",
+    "descriptionCard2": "Developing mobile applications using React Native and Android development with Kotlin.",
+    
+    "titleCard3": "Back-end & Systems",
+    "descriptionCard3": "Experience with Java, Spring Boot and databases, focused on learning, integration and system logic.",
+    
+    "titleCard4": "Game Development",
+    "descriptionCard4": "Developing games using Unity and C#, focusing on game mechanics and interactivity."
+  },
+  "ResumePage": {
+    "experienceTitle": "My Work",
+    "experienceTitleSpan": "Experience",
+    "educationTitle": "My",
+    "educationTitleSpan": "Education",
+    
+    "resumeCardTitle1": "Undergraduate Research Project",
+    "resumeCardDescription1": "Worked on the development and maintenance of an educational Android application using Kotlin, focused on supporting children's literacy. Implemented new features, fixed bugs and collaborated with research-oriented development.",
+    
+    "resumeCardTitle2": "Academic & Personal Projects",
+    "resumeCardDescription2": "Developed web and mobile applications using React, Next.js, React Native and TypeScript. Focused on responsive design, API integration, accessibility and user experience.",
+    
+    "resumeCardTitle3": "Game Development Projects",
+    "resumeCardDescription3": "Developed games using Unity and C#, exploring game mechanics, physics, animations, UI and interactive feedback through academic and personal projects.",
+    
+    "resumeCardTitle4": "Bachelor's Degree in Computer Science",
+    "resumeCardDescription4": "Undergraduate student at the Universidade Estadual do Sudoeste da Bahia (UESB), with a solid foundation in programming logic, data structures and object-oriented programming. Experience with academic projects in web, mobile, backend and game development.",
+    
+    "progress": "2022.2 – 2026.2 (In progress)"
+  },
+  "WorksPage": {
+    "title": "A small selection of recent",
+    "titleSpan": "projects",
+    "titelCard1": "Top Rated Movies",
+    "descriptionCard1": "A movie discovery web application that displays top-rated and trending movies, allowing users to browse by genre and release year. Built with React and TypeScript, the project consumes data from the TMDB API and focuses on responsive design, clear navigation and a smooth user experience.",
+
+    "titelCard2": "CT Management Dashboard",
+    "descriptionCard2": "Web-based management system designed to assist sports training centers with student registrations, court scheduling and class organization. Developed with React and Vite, the project focuses on administrative workflows, data organization and usability.",
+
+    "titelCard3": "Legere Ensino",
+    "descriptionCard3": "Educational Android application developed during a one-year undergraduate research project, aimed at supporting childre's literacy through games and interactive activities that serve as meaningful predictors of learning success during early education. Built with Kotlin using Android Studio.",
+
+    "titelCard4": "Estacionados",
+    "descriptionCard4": "Educational game developed during a game development course using Unity 3D and C#. The gameplay combines fun and learning by challenging players to park a car in the indicated spot within a limited time and answer traffic rules quizzes based on the Brazilian Traffic Code (CTB) to earn stars. The project uses 3D assets from the Unity Asset Store and audio effects sourced from Pixabay."
+  },
+  "SkillPage": {
+    "title": "My",
+    "titleSpan": "Skills"
+  },
+  "ContactPage":{
+    "title": "Schedule a call with me to see if I can help",
+    "subtitle": "Reach out to me today and let's discuss how I can help you achieve your goals.",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email Address",
+    "mobilePlaceholder": "Mobile Number",
+    "messagePlaceholder": "Your Message",
+    "sendButton": "Send Message",
+    "alertWarning": "Please fill all required fields!",
+    "alertSuccess": "Message sent successfully!",
+    "alertError": "Something went wrong. Please try again later or contact me via email."
+  },
+  "Footer": {
+    "title":"Hugo - Personal Portfolio Website"
+  }
+}

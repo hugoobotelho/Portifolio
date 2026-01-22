@@ -1,15 +1,19 @@
-import { NavLinks } from '@/app/constants/constant'
+import { NavLinks } from '@/app/[locale]/constants/constant'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 import { CgClose } from 'react-icons/cg'
 
 
 type Props = {
-    closeNav: ()=>void
+    closeNav: () => void
     showNav: boolean
 }
 
-const MobileNav = ({closeNav, showNav}: Props) => {
+const MobileNav = ({ closeNav, showNav }: Props) => {
+
+    const t = useTranslations('NavBar');
+
 
     const navOpen = showNav ? "trasnlate-x-0" : "translate-x-[100%]"
     return (
@@ -20,9 +24,9 @@ const MobileNav = ({closeNav, showNav}: Props) => {
             <div className={`text-[#171D1D] fixed justify-center flex flex-col h-full transform ${navOpen} transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-[#C4E860] space-y-6 z-[100050] right-0`}>
                 {NavLinks.map((link) => {
                     return (
-                        <Link key={link.id} href={link.url}>
+                        <Link key={link.id} href={link.url} onClick={closeNav}>
                             <p className='text-[#171D1D] w-fit text-xl ml-12 border-b-[1.5px] pb-1 border-[#171D1D] sm:text-[30px]'>
-                                {link.label}
+                                {t(link.labelKey)}
                             </p>
                         </Link>
                     )
