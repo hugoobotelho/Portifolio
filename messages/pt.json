@@ -47,6 +47,7 @@
     "progress": "2022.2 – 2026.2 (Em andamento)"
   },
   "WorksPage": {
+    "seeProject": "Ver Projeto",
     "title": "Uma pequena seleção de",
     "titleSpan": "projetos recentes",
     "titelCard1": "Filmes mais bem avaliados",
@@ -56,7 +57,9 @@
     "titelCard3": "Legere Ensino",
     "descriptionCard3": "Aplicação educacional Android desenvolvida durante um projeto de iniciação científica com duração de um ano, com o objetivo de apoiar a alfabetização infantil por meio de jogos e atividades interativas que atuam como importantes preditores do sucesso na aprendizagem durante a educação inicial. Desenvolvida com Kotlin utilizando o Android Studio.",
     "titelCard4": "Estacionados",
-    "descriptionCard4": "Jogo educacional desenvolvido durante um curso de desenvolvimento de jogos utilizando Unity 3D e C#. A jogabilidade combina diversão e aprendizado ao desafiar os jogadores a estacionar um carro no local indicado dentro de um tempo limitado e responder a questionários sobre regras de trânsito baseados no Código de Trânsito Brasileiro (CTB) para ganhar estrelas. O projeto utiliza assets 3D da Unity Asset Store e efeitos sonoros obtidos no Pixabay."
+    "descriptionCard4": "Jogo educacional desenvolvido durante um curso de desenvolvimento de jogos utilizando Unity 3D e C#. A jogabilidade combina diversão e aprendizado ao desafiar os jogadores a estacionar um carro no local indicado dentro de um tempo limitado e responder a questionários sobre regras de trânsito baseados no Código de Trânsito Brasileiro (CTB) para ganhar estrelas. O projeto utiliza assets 3D da Unity Asset Store e efeitos sonoros obtidos no Pixabay.",
+    "titelCard5": "Aplicativo de Chat P2P em Rede Local",
+    "descriptionCard5": "Aplicativo de chat peer-to-peer projetado para comunicação em rede local, permitindo que os usuários criem grupos de chat e troquem mensagens em tempo real sem a necessidade de um servidor central. A aplicação utiliza sockets TCP e UDP para gerenciar a transmissão e o controle das mensagens, com foco em conceitos de programação em redes, concorrência e comunicação descentralizada."
   },
   "SkillPage": {
     "title": "Minhas",
@@ -75,6 +78,6 @@
     "alertError": "Algo deu errado. Por favor, tente novamente mais tarde ou entre em contato comigo por e-mail."
   },
   "Footer": {
-    "title":"Hugo - Site de Portfólio Pessoal"
+    "title": "Hugo - Site de Portfólio Pessoal"
   }
 }

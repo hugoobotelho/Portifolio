@@ -67,8 +67,8 @@ const Nav = ({ openNav }: Props) => {
                 <div className='hidden lg:flex items-center space-x-10'>
                     {NavLinks.map((link) => {
                         return (<Link key={link.id} href={link.url} className={`text-base  ${activeSection === link.section
-                                ? 'text-[#C4E860]'
-                                : 'text-white hover:text-[#C4E860]'
+                            ? 'text-[#C4E860]'
+                            : 'text-white hover:text-[#C4E860]'
                             } font-medium transition-all duration-200`}>
                             <p>{t(link.labelKey)}</p>
                         </Link>)
@@ -77,13 +77,20 @@ const Nav = ({ openNav }: Props) => {
                 {/* Buttons */}
                 <div className='flex items-center space-x-4'>
                     {/* Select language button */}
-                    <LanguageSelect/>
+                    <LanguageSelect />
 
                     {/* CV Button */}
-                    <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#C4E860] hover:bg-[#A0BC53] transition-all duration-300 text-white flex items-center space-x-2'>
-                        <BiDownload className='w-5 h-5 text-[#171D1D]' />
-                        <span className=' text-[#171D1D]'>{t('download')}</span>
-                    </button>
+                    <a
+                        href="/files/hugo_cv.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#C4E860] hover:bg-[#A0BC53] transition-all duration-300 text-white flex items-center space-x-2'>
+                            <BiDownload className='w-5 h-5 text-[#171D1D]' />
+                            <span className=' text-[#171D1D]'>{t('download')}</span>
+                        </button>
+                    </a>
+
                     {/* Burger Menu */}
                     <button onClick={openNav}>
                         <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden' />

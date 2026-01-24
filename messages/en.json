@@ -55,6 +55,7 @@
     "progress": "2022.2 – 2026.2 (In progress)"
   },
   "WorksPage": {
+    "seeProject": "See Project",
     "title": "A small selection of recent",
     "titleSpan": "projects",
     "titelCard1": "Top Rated Movies",
@@ -67,7 +68,11 @@
     "descriptionCard3": "Educational Android application developed during a one-year undergraduate research project, aimed at supporting childre's literacy through games and interactive activities that serve as meaningful predictors of learning success during early education. Built with Kotlin using Android Studio.",
 
     "titelCard4": "Estacionados",
-    "descriptionCard4": "Educational game developed during a game development course using Unity 3D and C#. The gameplay combines fun and learning by challenging players to park a car in the indicated spot within a limited time and answer traffic rules quizzes based on the Brazilian Traffic Code (CTB) to earn stars. The project uses 3D assets from the Unity Asset Store and audio effects sourced from Pixabay."
+    "descriptionCard4": "Educational game developed during a game development course using Unity 3D and C#. The gameplay combines fun and learning by challenging players to park a car in the indicated spot within a limited time and answer traffic rules quizzes based on the Brazilian Traffic Code (CTB) to earn stars. The project uses 3D assets from the Unity Asset Store and audio effects sourced from Pixabay.",
+ 
+    "titelCard5": "P2P Local Network Chat Application",
+    "descriptionCard5": "Peer-to-peer chat application designed for communication within a local network, enabling users to create chat groups and exchange messages in real time without relying on a central server. The application leverages TCP and UDP sockets to handle message transmission and control, focusing on network programming concepts, concurrency and decentralized communication."
+
   },
   "SkillPage": {
     "title": "My",
