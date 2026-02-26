@@ -81,7 +81,7 @@ const Nav = ({ openNav }: Props) => {
 
                     {/* CV Button */}
                     <a
-                        href="/files/hugo_cv.pdf"
+                        href="/files/Currículo - Dev Full Stack.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
